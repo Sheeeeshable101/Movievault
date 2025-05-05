@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Vault - Categories</title>
+    <link rel="stylesheet" href="categories.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+    
+    <div class="sidebar">
+        <div class="sidebar-icon" onclick="window.location.href='home.html'">
+            <i class="fas fa-home"></i>
+        </div>
+        <div class="sidebar-icon active" onclick="window.location.href='categories.html'">
+            <i class="fas fa-list"></i>
+        </div>
+        <div class="sidebar-icon" onclick="window.location.href='library.html'">
+            <i class="fas fa-bookmark"></i>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h1>CATEGORIES</h1>
+            <div class="divider"></div>
+        </header>
+
+        <section class="categories-section">
+            <div class="category-buttons">
+                <button class="category-button" onclick="window.location.href='comedy.html'">COMEDY</button>
+                <button class="category-button" onclick="window.location.href='action.html'">ACTION</button>
+                <button class="category-button" onclick="window.location.href='romance.html'">ROMANCE</button>
+                <button class="category-button" onclick="window.location.href='animation.html'">ANIMATION</button>
+                <button class="category-button" onclick="window.location.href='scifi.html'">SCI-FI</button>
+                <button class="category-button" onclick="window.location.href='horror.html'">HORROR</button>
+                <button class="category-button" onclick="window.location.href='war.html'">WAR</button>
+                <button class="category-button" onclick="window.location.href='disaster.html'">DISASTER</button>
+                <button class="category-button" onclick="window.location.href='fantasy.html'">FANTASY</button>
+            </div>
+        </section>
+
+        <section class="recommended-section">
+            <h2>Movies you may like</h2>
+            <div class="movie-grid">
+                <div class="movie-card">
+                    <div class="movie-image" style="background-image: url('Red film op.jpeg')">
+                        <div class="movie-overlay">
+                            <div class="movie-description">
+                                <p>The Straw Hat Pirates reunite with a famous singer whose powerful voice and hidden past trigger a world-shaking adventure.</p>
+                            </div>
+                            <div class="action-buttons">
+                                <button class="buy-button" onclick="window.location.href='payment.html'">Buy</button>
+                                <button class="rent-button" onclick="window.location.href='payment.html'">Rent</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-title">One Piece Film: Red</div>
+                </div>
+                <div class="movie-card">
+                    <div class="movie-image" style="background-image: url('despicable me 1.png')">
+                        <div class="movie-overlay">
+                            <div class="movie-description">
+                                <p>A villain named Gru plans the biggest heist in history but finds his life changed when he adopts three orphaned girls.</p>
+                            </div>
+                            <div class="action-buttons">
+                                <button class="buy-button" onclick="window.location.href='payment.html'">Buy</button>
+                                <button class="rent-button" onclick="window.location.href='payment.html'">Rent</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-title">Despicable Me</div>
+                </div>
+                <div class="movie-card">
+                    <div class="movie-image" style="background-image: url('slime movie.png')">
+                        <div class="movie-overlay">
+                            <div class="movie-description">
+                                <p>After dying in the real world, a man is reborn in a fantasy realm as a powerful slime with the ability to absorb skills and unite kingdoms.</p>
+                            </div>
+                            <div class="action-buttons">
+                                <button class="buy-button" onclick="window.location.href='payment.html'">Buy</button>
+                                <button class="rent-button" onclick="window.location.href='payment.html'">Rent</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-title">That Time I Got Reincarnated as a Slime</div>
+                </div>
+                <div class="movie-card">
+                    <div class="movie-image" style="background-image: url('how to train your drag hidden world.png')">
+                        <div class="movie-overlay">
+                            <div class="movie-description">
+                                <p>Hiccup and Toothless discover a secret dragon utopia, leading to a final battle that tests their friendship and leadership.</p>
+                            </div>
+                            <div class="action-buttons">
+                                <button class="buy-button" onclick="window.location.href='payment.html'">Buy</button>
+                                <button class="rent-button" onclick="window.location.href='payment.html'">Rent</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-title">How to Train Your Dragon: The Hidden World</div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="categories.js"></script>
+</body>
+</html>

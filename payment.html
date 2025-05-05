@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Vault - Payment</title>
+    <link rel="stylesheet" href="payment.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+    
+    <div class="sidebar">
+        <div class="sidebar-icon" onclick="window.location.href='home.html'">
+            <i class="fas fa-home"></i>
+        </div>
+        <div class="sidebar-icon" onclick="window.location.href='categories.html'">
+            <i class="fas fa-list"></i>
+        </div>
+        <div class="sidebar-icon" onclick="window.location.href='library.html'">
+            <i class="fas fa-bookmark"></i>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h1>COMPLETE YOUR PURCHASE</h1>
+            <div class="divider"></div>
+        </header>
+
+        <section class="payment-section">
+            <div class="movie-info">
+                <div class="movie-poster" id="payment-movie-poster"></div>
+                <div class="movie-details">
+                    <h2 id="payment-movie-title">Movie Title</h2>
+                    <p id="payment-movie-description">Movie description will appear here...</p>
+                </div>
+            </div>
+
+            <div class="payment-options">
+                <div class="option selected" data-type="buy">
+                    <h3>Buy</h3>
+                    <p class="price">$14.99</p>
+                    <p>Own forever</p>
+                </div>
+                <div class="option" data-type="rent">
+                    <h3>Rent</h3>
+                    <p class="price">$3.99</p>
+                    <p>48-hour access</p>
+                </div>
+            </div>
+
+            <form class="payment-form">
+                <h3>Payment Details</h3>
+                <div class="form-group">
+                    <label for="card-number">Card Number</label>
+                    <input type="text" id="card-number" placeholder="1234 5678 9012 3456" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="expiry-date">Expiry Date</label>
+                        <input type="text" id="expiry-date" placeholder="MM/YY" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" placeholder="123" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="card-name">Name on Card</label>
+                    <input type="text" id="card-name" placeholder="John Doe" required>
+                </div>
+                <button type="submit" class="pay-button">Complete Purchase</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="payment.js"></script>
+</body>
+</html>

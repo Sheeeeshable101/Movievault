@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Vault - Library</title>
+    <link rel="stylesheet" href="library.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+    
+    <div class="sidebar">
+        <div class="sidebar-icon" onclick="window.location.href='home.html'">
+            <i class="fas fa-home"></i>
+        </div>
+        <div class="sidebar-icon" onclick="window.location.href='categories.html'">
+            <i class="fas fa-list"></i>
+        </div>
+        <div class="sidebar-icon active" onclick="window.location.href='library.html'">
+            <i class="fas fa-bookmark"></i>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h1>YOUR LIBRARY</h1>
+            <div class="divider"></div>
+        </header>
+
+        <section class="purchased-section">
+            <h2>Purchased Movies</h2>
+            <div class="movie-grid">
+                <!-- Movies will be dynamically added here from JavaScript -->
+            </div>
+        </section>
+    </div>
+
+    <script src="library.js"></script>
+</body>
+</html>
