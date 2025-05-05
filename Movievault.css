@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    height: 100vh;
+    position: relative;
+}
+
+.background-animation {
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(115.85deg, #2F595A 8.06%, #3A6E6F 30.82%, #4A8D8E 58.8%, #59A9AA 76.82%, #65BEC0 94.36%);
+    animation: slide 15s linear infinite;
+    z-index: -1;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.logo-container {
+    margin-bottom: 40px;
+}
+
+.logo {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+.description {
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #000000;
+    margin-bottom: 30px;
+    letter-spacing: 0.1px;
+}
+
+.signin-button {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    width: 160px;
+    height: 48px;
+    background: transparent;
+    border: 1px solid #CAC4D0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.signin-button .button-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    color: #49454F;
+    transition: color 0.3s ease;
+    z-index: 1;
+}
+
+.signin-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(202, 196, 208, 0.2);
+    transition: all 0.4s ease;
+}
+
+.signin-button:hover::before {
+    left: 0;
+}
+
+.signin-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.signin-button:active {
+    transform: translateY(0);
+}
+
+@media (min-width: 768px) {
+    .logo {
+        max-width: 400px;
+    }
+    
+    .description {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .logo {
+        max-width: 500px;
+    }
+}
