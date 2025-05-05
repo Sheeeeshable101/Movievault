@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Vault - Watch</title>
+    <link rel="stylesheet" href="watch.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+    
+    <div class="sidebar">
+        <div class="sidebar-icon" onclick="window.location.href='home.html'">
+            <i class="fas fa-home"></i>
+        </div>
+        <div class="sidebar-icon" onclick="window.location.href='categories.html'">
+            <i class="fas fa-list"></i>
+        </div>
+        <div class="sidebar-icon" onclick="window.location.href='library.html'">
+            <i class="fas fa-bookmark"></i>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h1>WATCH MOVIE</h1>
+            <div class="divider"></div>
+        </header>
+
+        <section class="coming-soon-section">
+            <div class="coming-soon-container">
+                <i class="fas fa-film"></i>
+                <h2>Coming Soon</h2>
+                <p>We're working hard to bring you the best streaming experience.</p>
+                <p>This feature will be available in our next update!</p>
+                <button onclick="window.location.href='library.html'" class="back-button">
+                    <i class="fas fa-arrow-left"></i> Back to Library
+                </button>
+            </div>
+        </section>
+    </div>
+
+    <script src="watch.js"></script>
+</body>
+</html>
